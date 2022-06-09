@@ -1,2 +1,2 @@
 HELLO
-This is html assignments
+This is Git html assignments
