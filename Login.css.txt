@@ -5,6 +5,7 @@
 body {
 	background: #B0BEC5;
 }
+
 .box {
 	top: 50%;
 	left: 50%;
@@ -24,7 +25,8 @@ body {
 		border-bottom: 2px solid white;
 		font-family: Calibri;
 	}
-	.content {
+	.content
+         {
 		margin: 30px 50px;
 		
 		input#uname, input#passwd {
@@ -49,8 +51,7 @@ body {
 		
 	}
 	.footer {
-		bottom: 0;
-		left: 0;
+		
 		margin: 0 50px;
 		padding: 15px 5px;
 		width: 83%;
