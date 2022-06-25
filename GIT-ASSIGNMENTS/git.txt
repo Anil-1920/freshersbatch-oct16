@@ -1,0 +1,172 @@
+//project_dir
+
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ git init
+Initialized empty Git repository in C:/Users/ANIL T/OneDrive/Desktop/New folder (3)/project_dir/.git/
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ touch index.html
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ notepad index.html
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ git add index.html
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ git commit -m "index"
+[master (root-commit) 9a783d1] index
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ notepad index.html
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ touch info.txt
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ git info.txt
+git: 'info.txt' is not a git command. See 'git --help'.
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ touch .gitignore
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ git add index.html
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ git commit -m "new index"
+[master f0c3d08] new index
+ 3 files changed, 35 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 info.txt
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ notepad index.html
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ git log --pretty=oneline
+f0c3d0895747a245d4c829a141ca94738072dfbc (HEAD -> master) new index
+9a783d11f526031772fa544c2a551138d6f797b0 index
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ git revert ^C
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ git revert 9a783d11f526031772fa544c2a551138d6f797b0
+CONFLICT (modify/delete): index.html deleted in (empty tree) and modified in HEAD.  Version HEAD of index.html left in tree.
+error: could not revert 9a783d1... index
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master|REVERTING)
+$ git log
+commit f0c3d0895747a245d4c829a141ca94738072dfbc (HEAD -> master)
+Author: unknown <anilprabha1215@gmail.com>
+Date:   Thu Jun 9 16:58:53 2022 +0530
+
+    new index
+
+commit 9a783d11f526031772fa544c2a551138d6f797b0
+Author: unknown <anilprabha1215@gmail.com>
+Date:   Thu Jun 9 16:54:55 2022 +0530
+
+    index
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master|REVERTING)
+$ git log
+commit f0c3d0895747a245d4c829a141ca94738072dfbc (HEAD -> master)
+Author: unknown <anilprabha1215@gmail.com>
+Date:   Thu Jun 9 16:58:53 2022 +0530
+
+    new index
+
+commit 9a783d11f526031772fa544c2a551138d6f797b0
+Author: unknown <anilprabha1215@gmail.com>
+Date:   Thu Jun 9 16:54:55 2022 +0530
+
+    index
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master|REVERTING)
+$ git my-add index.html
+git: 'my-add' is not a git command. See 'git --help'.
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master|REVERTING)
+$ git add index.html
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master|REVERTING)
+$ git commit -m "my-add"
+[master ea3c3e8] my-add
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)
+$ git log
+commit ea3c3e8654c261e5093497434500fd4f9ca8506c (HEAD -> master)
+Author: unknown <anilprabha1215@gmail.com>
+Date:   Thu Jun 9 17:05:06 2022 +0530
+
+    my-add
+
+commit f0c3d0895747a245d4c829a141ca94738072dfbc
+Author: unknown <anilprabha1215@gmail.com>
+Date:   Thu Jun 9 16:58:53 2022 +0530
+
+    new index
+
+commit 9a783d11f526031772fa544c2a551138d6f797b0
+Author: unknown <anilprabha1215@gmail.com>
+Date:   Thu Jun 9 16:54:55 2022 +0530
+
+    index
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/project_dir (master)

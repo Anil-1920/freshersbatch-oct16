@@ -1,0 +1,169 @@
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3) (master)
+$ cd Assignments
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ touch README.txt
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ notepad README.txt
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git init
+Initialized empty Git repository in C:/Users/ANIL T/OneDrive/Desktop/New folder (3)/Assignments/.git/
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.txt
+
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git commit -m "Readme"
+[master (root-commit) 05ba4ed] Readme
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.txt
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git checkout -b html-assignments
+Switched to a new branch 'html-assignments'
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git commit -m "HTML assignments"
+On branch html-assignments
+nothing to commit, working tree clean
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git commit -m "HTML assignments"
+On branch html-assignments
+nothing to commit, working tree clean
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git commit -m "HTML assignments"
+[html-assignments e412802] HTML assignments
+ 1 file changed, 35 insertions(+)
+ create mode 100644 Login.html
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git commit -m "new HTML assignments"
+On branch html-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Login.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git commit -m "new HTML assignments"
+[html-assignments 991005d] new HTML assignments
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git checkout -b master
+fatal: a branch named 'master' already exists
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git commit -m "new Readme"
+[master 6aafd0f] new Readme
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git commit -m "changed HTML assignments"
+[html-assignments 9c4c486] changed HTML assignments
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git commit -m "new HTML assignments"
+[html-assignments 64e08a9] new HTML assignments
+ 1 file changed, 1 insertion(+)
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git commit -m "new Readme"
+[master f197d73] new Readme
+ 2 files changed, 37 insertions(+), 1 deletion(-)
+ create mode 100644 Login.html
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git commit -m "changed HTML assignments"
+[html-assignments 2260407] changed HTML assignments
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git merge html-assinnments
+merge: html-assinnments - not something we can merge
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git merge html-assignments
+Auto-merging Login.html
+CONFLICT (add/add): Merge conflict in Login.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master|MERGING)
+$ git branch -d html-assignments
+error: The branch 'html-assignments' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D html-assignments'.
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master|MERGING)
+$ git branch -D html-assignments
+Deleted branch html-assignments (was 2260407).
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master|MERGING)

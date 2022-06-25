@@ -1,0 +1,65 @@
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git checkout -b js-assignments
+Switched to a new branch 'js-assignments'
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (js-assignments)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (js-assignments)
+$ git commit -m "js-assignments"
+[js-assignments f1e874c] js-assignments
+ 1 file changed, 14 insertions(+)
+ create mode 100644 Login.js
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (js-assignments)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (js-assignments)
+$ git commit -m "Readme"
+[js-assignments 16fcbeb] Readme
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git commit -m "Readme"
+[master 2f66c09] Readme
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (js-assignments)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (js-assignments)
+$ git commit -m "js-assignments"
+[js-assignments e449960] js-assignments
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git merge js-assinments
+merge: js-assinments - not something we can merge
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git merge js-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master|MERGING)
+$ git branch -D js-assignments
+Deleted branch js-assignments (was e449960).
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master|MERGING)

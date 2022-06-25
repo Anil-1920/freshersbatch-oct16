@@ -1,0 +1,118 @@
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master|MERGING)
+$ git checkout -b css-assignments
+Switched to a new branch 'css-assignments'
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (css-assignments)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (css-assignments)
+$ git commit -m "css assignments"
+[css-assignments 6594282] css assignments
+ 2 files changed, 90 insertions(+)
+ create mode 100644 Login.css.txt
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (css-assignments)
+$ git status
+On branch css-assignments
+nothing to commit, working tree clean
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (css-assignments)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (css-assignments)
+$ git commit -m "New M Readme"
+On branch css-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (css-assignments)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (css-assignments)
+$ git commit -m "New M Readme"
+[css-assignments bb2ae36] New M Readme
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git  commit -m "new n Readme"
+[master 5cebaf8] new n Readme
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git commit -m "css assignments"
+On branch master
+nothing to commit, working tree clean
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git checkout -b css-assignments
+fatal: a branch named 'css-assignments' already exists
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (css-assignments)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (css-assignments)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        Login.css.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (css-assignments)
+$ git commit -m "css assignments"
+[css-assignments 3d97b47] css assignments
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git merge css-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master|MERGING)
+$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+        new file:   Login.css.txt
+        modified:   Login.html
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.txt
+
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master|MERGING)
+$ git add .
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master|MERGING)
+$ git commit -m "commit"
+[master 5d7f438] commit
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
+$ git branch -D css-assignments
+Deleted branch css-assignments (was 3d97b47).
+
+ANIL T@Anil MINGW64 ~/OneDrive/Desktop/New folder (3)/Assignments (master)
